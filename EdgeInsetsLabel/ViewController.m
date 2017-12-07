@@ -23,7 +23,7 @@
     
     self.label = [[EdgeInsetsLabel alloc] initWithFrame:CGRectMake(90, 90, 200, 100)];
     [self.view addSubview:self.label];
-    self.label.text = @"人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。";
+    self.label.text = @"人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。人之初，性本善，我最喜欢吃鸡蛋。";
     self.label.numberOfLines = 0;
     self.label.backgroundColor = [UIColor orangeColor];
     self.label.contentInset = UIEdgeInsetsMake(0, 20, 0, 20);
@@ -37,7 +37,6 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     self.label.contentInset = UIEdgeInsetsMake(0, 80, 0, 20);
     self.label.text = @"因缺思厅";
-    [self.label sizeToFit];
 }
 
 - (void)didReceiveMemoryWarning {
