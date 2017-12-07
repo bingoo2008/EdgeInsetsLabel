@@ -13,6 +13,7 @@
 		D97ABAB51FD7C415008A101A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97ABAB41FD7C415008A101A /* Assets.xcassets */; };
 		D97ABAB81FD7C415008A101A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97ABAB61FD7C415008A101A /* LaunchScreen.storyboard */; };
 		D97ABABB1FD7C415008A101A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D97ABABA1FD7C415008A101A /* main.m */; };
+		D97ABAC41FD7C531008A101A /* EdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D97ABAC31FD7C531008A101A /* EdgeInsetsLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D97ABAB71FD7C415008A101A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D97ABAB91FD7C415008A101A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D97ABABA1FD7C415008A101A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D97ABAC21FD7C531008A101A /* EdgeInsetsLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EdgeInsetsLabel.h; sourceTree = "<group>"; };
+		D97ABAC31FD7C531008A101A /* EdgeInsetsLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdgeInsetsLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		D97ABAAA1FD7C415008A101A /* EdgeInsetsLabel */ = {
 			isa = PBXGroup;
 			children = (
+				D97ABAC11FD7C4B0008A101A /* EdgeInsetsLabel */,
 				D97ABAAB1FD7C415008A101A /* AppDelegate.h */,
 				D97ABAAC1FD7C415008A101A /* AppDelegate.m */,
 				D97ABAAE1FD7C415008A101A /* ViewController.h */,
@@ -67,6 +71,15 @@
 				D97ABAB61FD7C415008A101A /* LaunchScreen.storyboard */,
 				D97ABAB91FD7C415008A101A /* Info.plist */,
 				D97ABABA1FD7C415008A101A /* main.m */,
+			);
+			path = EdgeInsetsLabel;
+			sourceTree = "<group>";
+		};
+		D97ABAC11FD7C4B0008A101A /* EdgeInsetsLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D97ABAC21FD7C531008A101A /* EdgeInsetsLabel.h */,
+				D97ABAC31FD7C531008A101A /* EdgeInsetsLabel.m */,
 			);
 			path = EdgeInsetsLabel;
 			sourceTree = "<group>";
@@ -102,7 +115,7 @@
 				TargetAttributes = {
 					D97ABAA71FD7C415008A101A = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -145,6 +158,7 @@
 				D97ABAB01FD7C415008A101A /* ViewController.m in Sources */,
 				D97ABABB1FD7C415008A101A /* main.m in Sources */,
 				D97ABAAD1FD7C415008A101A /* AppDelegate.m in Sources */,
+				D97ABAC41FD7C531008A101A /* EdgeInsetsLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +292,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J5JWPJ294;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EdgeInsetsLabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KuaiJianKang.EdgeInsetsLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +308,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J5JWPJ294;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EdgeInsetsLabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KuaiJianKang.EdgeInsetsLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
