@@ -12,9 +12,8 @@
 
 - (void)setContentInset:(UIEdgeInsets)contentInset {
     _contentInset = contentInset;
-    NSString *tempString = self.text;
-    self.text = @"";
-    self.text = tempString;
+    
+    [self setNeedsDisplay];
 }
 
 -(void)drawTextInRect:(CGRect)rect {
